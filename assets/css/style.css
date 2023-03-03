@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif; */
+/* clear declaration */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;  
+}
+.wrapper{
+    width: 100%;
+    margin: auto;
+    /* border: 3px solid red; */
+}
+.nav{
+    overflow: auto;
+    width: 85%;
+    margin: 1em auto;
+    /* border: 3px solid green; */
+}
+.nav h1{
+    text-transform: uppercase;
+    width: 50%;
+    float: left;
+    /* border: 3px solid blueviolet; */
+}
+.nav h1 a{
+    font-family: 'Oswald', sans-serif;
+    color: #96746b;
+    text-decoration: none;
+    /* border: 3px solid yellow; */
+}
+.nav ul{
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-top: 1em;
+    /* border: 3px solid yellowgreen; */
+}
+.nav ul li{
+    display: inline-block;
+    margin-left: 1em;
+    /* border: 2px solid red; */
+}
+.nav ul a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700px;
+    color: #312a26;
+    text-decoration: none;
+    /* border: 3px solid blue; */
+}
+
+/* (2)Banner Area */
+.banner{
+    width: 100%;
+    height: 40em;
+    position: relative;
+    background-size: cover;
+    background-image: url(../images/03-01-2022/banner-bg.jpg);
+    background-position: center;
+    /* border: 3px solid yellow; */
+}
+
+.banner-text{
+    /* width: 50%;
+    height: 35%; */
+    position: absolute;
+    top: 50%;
+    left:7.5%;
+    width: 45;
+    /* border: 3px solid blue; */
+    color: white;
+    transform: translateY(-50%);
+
+}
+
+.banner-text h2{
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #c7a17a;
+    
+}
+
+.banner-text h2 span{
+    color: #a38279;
+}
+.banner-text p{
+    width: 1em auto;
+    margin-bottom :0.5em;
+}
+
+.banner-text a{
+    text-decoration: none;
+    display: inline-block;
+    /* position:absolute; is also able to make same style */
+    padding: 1em;
+    background-color: #321a26;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 1em;
+}
+
+/* (3)box area*/
+/* in this case,
+  you adjust box to the right position and
+  insert the image at the end.
+  */
+
+.box{
+    width: 85%;
+    margin: 4em auto;
+    overflow: scroll;
+    /* border: 2px solid green; */
+}
+/* overflow: auto; is automatically ocuppie the space 
+   inside the elements of size*/
+.box-image{
+    width: 48.5%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 3%;
+    /* border: 2px solid red; */
+}
+.box-image1{
+    margin-right: 3%;
+    background-image: url(../images/03-01-2022/ads-img1.jpg);
+}
+.box-image2{
+    background-image: url(../images/03-01-2022/ads-img2.jpg);
+}
+.text{
+    /* border: 2px solid green; */
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 10%;
+    width: 45%;
+}
+.box-image h3 {
+    letter-spacing: 2px;
+    font-size: 2em;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px rgba(49, 49, 49, 0.578);
+    /* border: 2px solid yellow; */
+}
+.text a{
+    padding-top: 5px;
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 6px rgba(49, 49, 49, 0.578) ;
+    /* border: 2px solid purple; */
+}
+
+/* merchandise area */
+.merch{
+    width: 85%;
+    margin: 4em auto;
+    /* border: 3px solid blue; */
+}
+.section-header{
+    /* border: 3px solid green; */
+    text-align: center;
+    /* font-weight: 500; */
+}
+.section-header span{
+    color: burlywood;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.section-header h2{
+    text-transform: uppercase;
+    color: #321a26;
+    /* border: 2px solid purple; */
+}
+.section-header hr{
+    background-color: #c7a17a;
+    height: 2px;
+    width: 25%;
+    /* color: #c7a17a; */
+    margin: auto;
+    /* not make underline  use hr to make background color to 
+       show it like a underline */
+}
+.merch-gallery{
+    /* border: 3px solid yellow; */
+    margin-top: 2em;
+    overflow: auto;
+
+}
+
+.merch-items {
+    /* border: 3px solid red; */
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+/* Pseudo Element (this is for advanse)*/
+.merch-items:nth-child(4),
+.merch-items:nth-child(8){
+    margin: 0;
+}
+.merch-items img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover ;
+}
+
+/* (5) discount area*/
+.discount{
+    border: 2px solid green;
+    width: 85%;
+    height: 350px;
+    margin: 4em auto;
+    background-image: url(../images/03-01-2022/discount-img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.discount-text{
+    width: auto;
+    position: absolute;
+    text-align: center;
+    /* margin:auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid yellow;
+    color: white;
+}
+.discount-text h2{
+    font-size: 2em;
+    text-shadow: 3px 3px 6px #312a26;
+    text-transform: uppercase;
+    /* word-spacing: 1px; */
+    /* border: 2px solid pink; */
+    
+}
+.discount-text span{
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: smaller;
+    /* border: 2px solid green; */
+}
+.discount-text a{
+    border: 2px solid blue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, .5);
+    color: #312a26;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+}
+.box-image3{
+    margin-right: 2em;
+    background-image: url(../images/03-01-2022/ads-img3.jpg);
+}
+.box-image4{
+    background-image: url(../images/03-01-2022/ads-img4.jpg) ;
+}
+.box-image5{
+    margin-right: 2em;
+    background-image: url(../images/03-01-2022/ads-img5.jpg) ;
+}
+.box-image6{
+    background-image: url(../images/03-01-2022/ads-img6.jpg) ;
+}
+
+/* (8)form this is my answer*/
+/* .form-header{
+    border: 2px solid blue;
+    text-align: center;
+}
+.form-header h2{
+    color: #312a26;
+    text-transform: uppercase;
+}
+.form-header hr{
+    background-color: #c7a17a;
+    width: 25%;
+    height: 2px;
+    margin: auto;
+}
+.reservation{
+    background-color: beige;
+}
+.form-group{
+    border: 2px solid blue;
+    background-color: rgb(245, 226, 230);
+    width: 85%;
+    margin: auto;
+}
+.form-group p{
+    text-align: center;
+}
+.form-group label{
+} */
+/* (8)reservation area */
+.reservation {
+    /* border: 3px solid red; */
+    width: 85%;
+    margin: 4em auto;  
+}
+form{
+    overflow: auto;
+}
+.form-group{
+    margin-top: 2em;
+    background-color: #f2f2f2;
+    float: left;
+    width: 49.5%;
+    border-radius: 5px;
+    padding: 2em;
+    height: 650px; 
+    /* border: 3px solid green; */
+}
+.form-group:nth-child(1){
+    margin-right: 1%;
+    /* border: 3px solid blue; */
+}
+form input,
+form label,
+form select,
+form text area{
+    display:inline-block;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    padding: 1em;
+    margin-bottom: 1em;
+    /* border: 2px solid red; */
+}
+form label{
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: .5em;
+    /* border: 2px solid blue; */
+}
+.res-time{
+    text-align: center;
+}
+.res-time *{
+    width: auto;
+}
+form p{
+    margin: 1em;
+    text-align: center;
+    font-weight: 700;
+}
+form h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.form-group img{
+    /* border: 2px solid blue; */
+    width: 150px;
+    margin-left: 35%;
+}
+form h3::after{
+    background-image: url(../images/03-01-2022/footer-img.jpg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+.res-agreement{
+    width: auto;
+}
+.form-group input[type=submit]{
+    background-color: #c7a17a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* 
+.res-agreement input{
+    border: 2px solid blue;
+    position:relative;
+}
+.submit{
+    background-color: #c7a17a;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+ */
+
+/* .footer{
+    width: 100%;
+    height: 20em;
+    background-image: url(../images/03-01-2022/footer-img.jpg);
+    background-size: contain;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+}
+.footer-widgets{
+    border: 2px solid yellow;
+    width: 23%;
+    float: left;
+    margin: 3em auto;
+    margin-left: 20px;
+}
+.footer-widgets h3,
+.footer-widgets table,
+.footer-widgets h4{
+    color: #fff;
+}
+.footer-widgets h3{
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 1em auto;
+}
+.footer-widgets p{
+    color: #c7a17a;
+    font-weight:100;
+    word-spacing: 2px;
+}
+.footer-widgets input[type=search]{
+    border: 2px solid blue;
+    float: left;
+    width: 60%;
+    
+}
+.footer-widgets input[type=submit]{
+    border: 2px solid blue;
+    float: left;
+    width: 25%;
+    margin-left: 0.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #c7a17a;
+} */
+.footer{
+    background-image: url(../images/03-01-2022/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    /* border:3px solid green; */
+}
+.footer-contents{
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+    /* border: 2px solid purple; */
+}
+.footer-widgets{
+    width: 23.25%;
+    float: left;
+    margin-right: 1%;
+    /* border: 2px solid blue; */
+}
+.footer-widgets:nth-child(4){
+    margin-right: 0;
+    /* border: 2px solid red; */
+}
+.footer-widgets h3{
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.footer-widgets h4{
+    color: #fff;
+}
+.footer-widgets p{
+    color: #c7a17a;
+}
+.footer td,th{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-overflow: 3px 3px 6px;
+}
+.footer-form *{
+    width: auto;
+}
+
+
+/* 
+github
+   1git version
+   2git status
+   3git push
+   4git add
+   5git commit
+ */
